@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marvex | Fintech para Marmorarias</title>
+    <meta
+      name="description"
+      content="A Marvex é a primeira fintech 100% focada em marmorarias. Controle pagamentos, reduza taxas e ofereça melhores condições aos clientes."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <nav class="nav container" aria-label="Navegação principal">
+        <a class="brand" href="#top" aria-label="Marvex">
+          <img src="{{ url_for('static', filename='images/MARVEX LP/logo.png') }}" alt="Marvex Pay">
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#beneficios">Benefícios</a>
+          <a href="#taxas">Taxas</a>
+          <a href="#pagamentos">Pagamentos</a>
+          <a href="#contato">Contato</a>
+          <a class="button button-small" href="#contato">Fale conosco</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-light" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span>Fintech para Marmorarias</p>
+            <h1 id="hero-title">A 1ª fintech 100% focada em <span class="hero-highlight">marmorarias.</span></h1>
+            <p class="lead">
+              Pague menos em taxas de antecipação. Ofereça melhores condições de pagamento a seus clientes.
+              Acelere o crescimento de sua marmoraria.
+            </p>
+            <div class="actions">
+              <a class="button" href="#contato">Quero falar com a Marvex</a>
+              <a class="button button-outline" href="#beneficios">
+                Ver benefícios
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="m13 6 6 6-6 6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Painel financeiro Marvex">
+            <img
+              class="hero-banner-image"
+              src="{{ url_for('static', filename='images/MARVEX LP/image.png') }}"
+              alt="Especialista Marvex segurando o aplicativo Marvex Pay ao lado do painel financeiro."
+            >
+            <div class="stone-device" aria-hidden="true">
+              <div class="stone-slab"></div>
+              <div class="terminal">
+                <div class="terminal-screen"></div>
+                <div class="terminal-keypad">
+                  <span></span><span></span><span></span>
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="dashboard-panel">
+              <div class="panel-top">
+                <p>Painel Marvex</p>
+                <div aria-hidden="true"><span></span><span></span><span></span></div>
+              </div>
+              <p class="panel-label">Saldo Disponível</p>
+              <div class="money"><span>R$</span>47.850<small>,00</small></div>
+              <p class="growth">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m5 15 5-5 4 4 5-7"></path>
+                  <path d="M15 7h4v4"></path>
+                </svg>
+                +12,3% este mês
+              </p>
+              <div class="bars" aria-hidden="true">
+                <span style="--h: 38%"></span>
+                <span style="--h: 58%"></span>
+                <span style="--h: 48%"></span>
+                <span style="--h: 76%"></span>
+                <span style="--h: 66%"></span>
+                <span style="--h: 86%"></span>
+                <span style="--h: 70%"></span>
+                <span class="active" style="--h: 96%"></span>
+                <span style="--h: 82%"></span>
+              </div>
+              <div class="months" aria-hidden="true">
+                <span>Jan</span><span>Fev</span><span>Mar</span><span>Abr</span><span>Mai</span><span>Jun</span><span>Jul</span><span>Ago</span><span>Set</span>
+              </div>
+            </div>
+
+            <div class="bonus-panel">
+              <span class="icon-circle" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M4 8h16v10H4z"></path>
+                  <path d="M8 8V6h8v2"></path>
+                  <path d="M4 12h16"></path>
+                </svg>
+              </span>
+              <div>
+                <p>Bonificação Acumulada</p>
+                <strong>R$ 1.450,00</strong>
+                <small>Em ferramentas para sua operação</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Diferenciais Marvex">
+        <div class="marquee-track">
+          <span class="marquee-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg> Antecipação com taxa menor</span>
+          <span class="marquee-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg> Até 12x sem juros</span>
+          <span class="marquee-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg> Bonificação em produtos</span>
+          <span class="marquee-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg> Conta digital para marmoraria</span>
+          <span class="marquee-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg> Suporte especializado</span>
+          <span class="marquee-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg> 100% focada em marmorarias</span>
+          <span class="marquee-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg> Antecipação com taxa menor</span>
+          <span class="marquee-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg> Até 12x sem juros</span>
+          <span class="marquee-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg> Bonificação em produtos</span>
+          <span class="marquee-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg> Conta digital para marmoraria</span>
+          <span class="marquee-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg> Suporte especializado</span>
+          <span class="marquee-item"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="5"/></svg> 100% focada em marmorarias</span>
+        </div>
+      </section>
+
+      <section class="section section-light" aria-labelledby="problem-title">
+        <div class="container split">
+          <div>
+            <p class="eyebrow"><span></span>O Problema</p>
+            <h2 id="problem-title">Chega de não ter controle sobre seus pagamentos e recebimentos. Assim o seu negócio não cresce.</h2>
+          </div>
+          <div class="split-copy">
+            <p>
+              Se você não tem suas finanças organizadas, você não consegue se planejar e a empresa trava em uma bola de neve
+              de inadimplência, dívidas e falta de visão.
+            </p>
+            <ul class="check-list">
+              <li>Perda de controle sobre recebimentos</li>
+              <li>Taxas abusivas dos bancos tradicionais</li>
+              <li>Inadimplência crescente de clientes</li>
+              <li>Falta de visibilidade financeira</li>
+            </ul>
+            <a class="button button-dark" href="#contato">Quero falar com a Marvex</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-muted steps-section" aria-labelledby="steps-title">
+        <div class="container">
+          <div class="section-heading split">
+            <div>
+              <p class="eyebrow"><span></span>Como funciona</p>
+              <h2 id="steps-title">É simples assim.</h2>
+            </div>
+            <div class="split-copy">
+              <p>
+                Sem contrato de fidelidade. Sem letra miúda. Sem taxa de adesão. A Marvex foi feita pra ser fácil,
+                porque você já tem o suficiente pra se preocupar.
+              </p>
+              <a class="button button-dark" href="#contato">
+                Quero começar
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14"></path>
+                  <path d="m13 6 6 6-6 6"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card">
+              <span class="step-big">01</span>
+              <span class="step-line" aria-hidden="true"></span>
+              <h3>Preencha o formulário</h3>
+              <p>Dois minutos, sem burocracia. Você preenche, a gente entra em contato no mesmo dia.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-big">02</span>
+              <span class="step-line" aria-hidden="true"></span>
+              <h3>Abra sua conta</h3>
+              <p>Abertura rápida e gestão completa da sua empresa.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-big">03</span>
+              <span class="step-line" aria-hidden="true"></span>
+              <h3>Receba a maquininha</h3>
+              <p>Entregamos configurada e pronta pra uso direto na sua marmoraria. Plug and play.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-big">04</span>
+              <span class="step-line" aria-hidden="true"></span>
+              <h3>Economize todo mês</h3>
+              <p>Taxa menor, bonificação em produtos, controle total do que entra e sai. Simples assim.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark" id="beneficios" aria-labelledby="solution-title">
+        <div class="container">
+          <div class="center-heading">
+            <p class="eyebrow eyebrow-center"><span></span>A Solução<span></span></p>
+            <h2 id="solution-title">
+              A Marvex centraliza, organiza e facilita as movimentações de sua empresa em uma plataforma totalmente dedicada ao mercado de marmoraria.
+            </h2>
+            <p>Confira alguns benefícios da Marvex:</p>
+          </div>
+
+          <div class="benefits-grid">
+            <article class="benefit-card">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M6 7h12v10H6z"></path><path d="M8 11h8"></path><path d="M9 15h2"></path><path d="M13 15h2"></path></svg>
+              </span>
+              <h3>Maquininhas Marvex</h3>
+              <p>Equipamentos próprios integrados à sua conta digital, com taxas exclusivas para o mercado de marmoraria.</p>
+            </article>
+            <article class="benefit-card">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 19V5"></path><path d="M4 19h16"></path><path d="M8 16v-5"></path><path d="M12 16V8"></path><path d="M16 16v-8"></path></svg>
+              </span>
+              <h3>Visibilidade total</h3>
+              <p>Mais controle sobre recebimentos e pagamentos em tempo real, tudo em uma plataforma centralizada.</p>
+            </article>
+            <article class="benefit-card">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 12h16"></path><path d="m14 6 6 6-6 6"></path><path d="M6 8h4"></path><path d="M6 16h7"></path></svg>
+              </span>
+              <h3>Taxas mais vantajosas</h3>
+              <p>Taxas de antecipação muito mais competitivas que as dos bancos tradicionais, com bonificação em produtos.</p>
+            </article>
+            <article class="benefit-card">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4 3 7 7 10 4-3 7-6 7-10V6z"></path><path d="m9 12 2 2 4-5"></path></svg>
+              </span>
+              <h3>Prevenção de inadimplência</h3>
+              <p>Ferramentas inteligentes que ajudam a reduzir calotes e proteger o fluxo de caixa da sua marmoraria.</p>
+            </article>
+            <article class="benefit-card">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M7 9h10"></path><path d="M7 13h7"></path><path d="M5 5h14v14H5z"></path><path d="M8 19l-3 3"></path><path d="M16 19l3 3"></path></svg>
+              </span>
+              <h3>Condições para clientes</h3>
+              <p>Ofereça parcelamento mais atrativo aos seus clientes sem prejudicar sua operação ou margem.</p>
+            </article>
+            <article class="benefit-card">
+              <span class="benefit-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M5 7h14v10H5z"></path><path d="M8 11h8"></path><path d="M8 14h5"></path><path d="M17 17v3"></path><path d="M7 17v3"></path></svg>
+              </span>
+              <h3>Conta Digital Marvex</h3>
+              <p>Gerencie toda a movimentação financeira da sua empresa em uma conta 100% digital e especializada.</p>
+            </article>
+          </div>
+
+          <div class="center-action">
+            <a class="button" href="#contato">Quero falar com a Marvex</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light" id="taxas" aria-labelledby="rates-title">
+        <div class="container">
+          <div class="split">
+            <div>
+              <p class="eyebrow"><span></span>Comparativo de Taxas</p>
+              <h2 id="rates-title">As taxas de antecipação da Marvex são muito mais vantajosas que as dos bancos.</h2>
+            </div>
+            <div class="split-copy">
+              <p>
+                Não tem mágica. Aqui você também paga a antecipação. A diferença é que você recebe parte do valor de volta,
+                através de bonificação em ferramentas para seu trabalho.
+              </p>
+              <p>E você pode usar essa bonificação para aprimorar sua operação e reinvestir em seu negócio.</p>
+            </div>
+          </div>
+
+          <div class="metric-strip">
+            <div>
+              <strong>12x</strong>
+              <span>Menos taxa que os bancos tradicionais</span>
+              <small>em média</small>
+            </div>
+            <div>
+              <strong>3x</strong>
+              <span>Mais vantajoso que fintechs comuns</span>
+              <small>em média</small>
+            </div>
+            <div>
+              <strong>100%</strong>
+              <span>Dedicado ao mercado de marmoraria</span>
+              <small>exclusivo</small>
+            </div>
+          </div>
+
+          <div class="table-wrap" role="region" aria-label="Comparativo de taxas" tabindex="0">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Marvex</th>
+                  <th>Banco Tradicional</th>
+                  <th>Fintech Comum</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Taxa de Antecipação</th>
+                  <td data-label="Marvex"><strong>1,2% a.m.</strong></td>
+                  <td data-label="Banco Tradicional">3,5% a.m.</td>
+                  <td data-label="Fintech Comum">2,8% a.m.</td>
+                </tr>
+                <tr>
+                  <th>Bonificação em Produtos</th>
+                  <td data-label="Marvex"><span class="status yes">Sim</span></td>
+                  <td data-label="Banco Tradicional"><span class="status no">Não</span></td>
+                  <td data-label="Fintech Comum"><span class="status no">Não</span></td>
+                </tr>
+                <tr>
+                  <th>Foco em Marmoraria</th>
+                  <td data-label="Marvex"><span class="status yes">Sim</span></td>
+                  <td data-label="Banco Tradicional"><span class="status no">Não</span></td>
+                  <td data-label="Fintech Comum"><span class="status no">Não</span></td>
+                </tr>
+                <tr>
+                  <th>Conta Digital</th>
+                  <td data-label="Marvex"><span class="status yes">Sim</span></td>
+                  <td data-label="Banco Tradicional"><span class="status partial">Sim</span></td>
+                  <td data-label="Fintech Comum">Parcial</td>
+                </tr>
+                <tr>
+                  <th>Parcelamento sem juros</th>
+                  <td data-label="Marvex"><strong>Até 12x</strong></td>
+                  <td data-label="Banco Tradicional">Limitado</td>
+                  <td data-label="Fintech Comum">Até 6x</td>
+                </tr>
+                <tr>
+                  <th>Suporte Especializado</th>
+                  <td data-label="Marvex"><span class="status yes">Sim</span></td>
+                  <td data-label="Banco Tradicional"><span class="status no">Não</span></td>
+                  <td data-label="Fintech Comum">Parcial</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section payment-section" id="pagamentos" aria-labelledby="payments-title">
+        <div class="container payment-grid">
+          <div class="simulation" aria-label="Simulação de parcelamento">
+            <span class="big-watermark">12x</span>
+            <p class="eyebrow">Simulação de Parcelamento</p>
+            <div class="installment-row">
+              <strong>1x</strong>
+              <span>R$ 10.000,00</span>
+              <small>à vista</small>
+            </div>
+            <div class="installment-row">
+              <strong>6x</strong>
+              <span>R$ 1.720,00</span>
+              <small>sem juros</small>
+            </div>
+            <div class="installment-row featured">
+              <strong>12x</strong>
+              <span>R$ 900,00</span>
+              <small>sem juros</small>
+            </div>
+            <p class="footnote">*Valores simulados para fins ilustrativos</p>
+          </div>
+
+          <div class="payment-copy">
+            <p class="eyebrow"><span></span>Condições de Pagamento</p>
+            <h2 id="payments-title">Nunca mais perca venda por falta de condições atrativas de pagamento para seus clientes.</h2>
+            <p>
+              Com a Marvex, você pode oferecer a seus clientes pagamentos em até 12x sem juros,
+              sem prejuízo para a sua operação.
+            </p>
+            <p>Meios de pagamentos exclusivos desenvolvidos para o mercado de marmoraria.</p>
+            <a class="button" href="#contato">Quero falar com a Marvex</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light story-section" aria-labelledby="story-title">
+        <div class="container">
+          <div class="story-mark" aria-hidden="true">
+            <img src="{{ url_for('static', filename='images/MARVEX LP/image copy.png') }}" alt="">
+          </div>
+          <div class="center-heading">
+            <h2 id="story-title">A Marvex é a primeira fintech do Brasil 100% dedicada ao mercado de marmoraria.</h2>
+            <div class="small-rule"></div>
+            <blockquote>
+              “Chega da falta de transparência dos bancos tradicionais, que cobram caro e não entendem nada do nosso mercado.”
+            </blockquote>
+          </div>
+
+          <div class="proof-grid">
+            <article>
+              <span></span>
+              <h3>100% especializada</h3>
+              <p>A única fintech do Brasil construída do zero para o mercado de marmoraria.</p>
+            </article>
+            <article>
+              <span></span>
+              <h3>Transparência total</h3>
+              <p>Sem letras miúdas. Você sabe exatamente quanto paga e quanto recebe de volta.</p>
+            </article>
+            <article>
+              <span></span>
+              <h3>Feita por quem entende</h3>
+              <p>Desenvolvida por pessoas que conhecem a realidade do dia a dia da marmoraria.</p>
+            </article>
+          </div>
+
+          <div class="center-action">
+            <a class="button button-dark" href="#contato">Quero falar com a Marvex</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contato" aria-labelledby="contact-title">
+        <div class="container contact-wrap">
+          <div class="contact-heading">
+            <p class="eyebrow eyebrow-center"><span></span>Fale com a Marvex<span></span></p>
+            <h2 id="contact-title">Fale com a gente no WhatsApp e veja como ter mais controle.</h2>
+            <p>Veja como ter mais controle sobre o que você recebe, o que você paga e o que realmente sobra na sua marmoraria.</p>
+          </div>
+
+          <div class="contact-cta">
+            <a
+              class="button button-whatsapp"
+              href="https://wa.me/5528999999999?text=Ol%C3%A1%2C%20quero%20falar%20com%20a%20Marvex."
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 2.1.55 4.15 1.6 5.96L2 22l4.25-1.68a9.87 9.87 0 0 0 5.79 1.85h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2Zm0 1.83c2.16 0 4.19.84 5.72 2.37a8.06 8.06 0 0 1 2.37 5.72c0 4.46-3.63 8.08-8.09 8.08a8.1 8.1 0 0 1-4.13-1.13l-.3-.18-2.52 1 .67-2.46-.19-.31a8.05 8.05 0 0 1-1.24-4.32c0-4.46 3.63-8.08 8.09-8.08Zm4.67 10.29c-.06-.11-.24-.18-.5-.31-.26-.13-1.53-.76-1.77-.84-.24-.09-.41-.13-.58.13-.17.26-.67.84-.82 1.01-.15.17-.3.19-.56.06-.26-.13-1.09-.4-2.07-1.28-.77-.68-1.28-1.53-1.43-1.79-.15-.26-.02-.4.11-.53.12-.12.26-.3.39-.46.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.45-.06-.13-.58-1.4-.8-1.92-.21-.5-.42-.43-.58-.44l-.5-.01c-.17 0-.45.06-.68.32-.24.26-.9.88-.9 2.15s.92 2.49 1.05 2.66c.13.17 1.8 2.76 4.37 3.87.61.26 1.09.42 1.46.54.61.2 1.17.17 1.61.1.49-.07 1.53-.62 1.74-1.23.21-.6.21-1.12.15-1.23Z"></path>
+              </svg>
+              Falar no WhatsApp
+            </a>
+            <p class="form-note" role="status">Atendimento rápido e sem compromisso.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#top" aria-label="Marvex">
+            <img src="{{ url_for('static', filename='images/MARVEX LP/logo rodape.png') }}" alt="Marvex Pay">
+          </a>
+          <p>A inteligência financeira que entende o chão da marmoraria.</p>
+          <small>Cachoeiro de Itapemirim — ES</small>
+        </div>
+        <div>
+          <h2>Navegação</h2>
+          <a href="#beneficios">Benefícios</a>
+          <a href="#taxas">Taxas</a>
+          <a href="#pagamentos">Pagamentos</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <div>
+          <h2>Recursos</h2>
+          <a href="#contato">Fale conosco</a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <small>© 2026 Marvex Pay · Todos os direitos reservados.</small>
+        <a href="#top">Voltar ao topo ↑</a>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='scripts/MARVEX LP/script.js') }}"></script>
+  </body>
+</html>

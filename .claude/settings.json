@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git log *)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(python -c \"import playwright; print\\('playwright-ok'\\)\")",
+      "Bash(curl -s -o /dev/null -w \"route /index -> %{http_code}\\\\n\" http://127.0.0.1:5006/index)",
+      "Bash(taskkill //F //PID 120708)",
+      "Read(//c/Users/Gabriel/.claude/projects/c--Users-Gabriel-Documents-Projetos-LP---MARBLE/memory/**)",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=390,900 --screenshot=C:/Users/Gabriel/AppData/Local/Temp/claude/c--Users-Gabriel-Documents-Projetos-LP---MARBLE/1dfe6b4a-cc72-4043-a329-e9ee0fdd1313/scratchpad/mobile-full.png http://127.0.0.1:5006/index)",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=390,7200 --screenshot=C:/Users/Gabriel/AppData/Local/Temp/claude/c--Users-Gabriel-Documents-Projetos-LP---MARBLE/1dfe6b4a-cc72-4043-a329-e9ee0fdd1313/scratchpad/mobile-tall.png http://127.0.0.1:5006/index)",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless --disable-gpu --window-size=390,900 --virtual-time-budget=3000 --run-all-compositor-stages-before-draw --dump-dom \"http://127.0.0.1:5006/index\")",
+      "Bash(sed -n 's/.*<pre id=\"diag\">//; s/<\\\\/pre>.*//p' C:/Users/Gabriel/AppData/Local/Temp/claude/c--Users-Gabriel-Documents-Projetos-LP---MARBLE/1dfe6b4a-cc72-4043-a329-e9ee0fdd1313/scratchpad/diag.html)",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless --disable-gpu --window-size=390,900 --virtual-time-budget=5000 --dump-dom \"http://127.0.0.1:5006/index\")",
+      "Bash(python - C:/Users/Gabriel/AppData/Local/Temp/claude/c--Users-Gabriel-Documents-Projetos-LP---MARBLE/1dfe6b4a-cc72-4043-a329-e9ee0fdd1313/scratchpad/diag2.html)",
+      "Bash(netstat -ano)",
+      "Bash(curl -s http://127.0.0.1:5007/index)",
+      "Bash(tasklist //FI \"IMAGENAME eq python.exe\")"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Gabriel\\.claude\\projects\\c--Users-Gabriel-Documents-Projetos-LP---MARBLE\\memory"
+    ]
+  }
+}
