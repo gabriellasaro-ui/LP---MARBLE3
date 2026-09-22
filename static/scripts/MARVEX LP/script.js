@@ -81,19 +81,16 @@ if (contactForm) {
     }
 
     const data = new FormData(contactForm);
-    const payload = {
-      nome: data.get("nome").trim(),
-      email: data.get("email").trim(),
-      telefone: data.get("telefone").trim(),
-      empresa: data.get("empresa").trim(),
-      cnpj: data.get("cnpj").trim(),
-    };
+    const payload = {};
+    data.forEach((value, key) => {
+      payload[key] = typeof value === "string" ? value.trim() : value;
+    });
 
     if (submitButton) submitButton.disabled = true;
     if (formNote) formNote.textContent = "Enviando...";
 
     try {
-      const response = await fetch("https://n8n.v4lisboatech.com.br/webhook/marvexpay", {
+      const response = await fetch("https://n8n.v4lisboatech.com.br/webhook/marvex", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
