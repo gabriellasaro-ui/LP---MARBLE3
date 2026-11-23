@@ -1479,6 +1479,20 @@ blockquote {
   font-size: 9px;
 }
 
+.site-footer .footer-legal {
+  color: rgba(6, 30, 27, 0.7);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.site-footer .footer-legal a:not(.brand) {
+  display: inline;
+  margin-top: 0;
+  color: inherit;
+  font-size: inherit;
+  font-weight: 400;
+}
+
 .site-footer h2 {
   margin-bottom: 20px;
   color: rgba(6, 30, 27, 0.46);
